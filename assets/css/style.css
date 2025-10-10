@@ -118,7 +118,8 @@ h2 {
     border: 2px solid var(--highlight-color);
     background-color: var(--highlight-color);
     color: white;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -153,26 +154,13 @@ h2 {
 
 #contact .social-links i:hover {
     color: var(--secondary-color);
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
 #contact .table-dark * {
     background-color: transparent;
-}
-
-
-
-
-/*grid visualisation CSS for testing */
-
-/*.container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
 }
 
 /* Media Queries */
